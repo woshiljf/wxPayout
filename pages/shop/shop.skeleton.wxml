@@ -1,0 +1,157 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/5/3 下午7:25:47 
+使用方法：
+在 E:\wxSourcePrograme\wxchat-out1\pages\shop\shop.wxml 引入模板
+
+```
+<import src="shop.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 E:\wxSourcePrograme\wxchat-out1\pages\shop\shop.wxss 中引入样式
+```
+@import "./shop.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view is="components/navbar/index">
+      <view class="navbar navbar-index--navbar " style="height:60px;background-color:#ED3F35">
+        <view class="navbar-action-wrap navbar-index--navbar-action-wrap navbar-action-group navbar-index--navbar-action-group row navbar-index--row item-center navbar-index--item-center" style="top:24px;">
+          <view is="components/icon/index" class="navbar-action_item navbar-index--navbar-action_item">
+            <view class="ss-font icon-index--ss-font ss-icon-back icon-index--ss-icon-back sk-pseudo sk-pseudo-circle" style="color: white; font-size: 15px; display:block "></view>
+          </view>
+        </view>
+        <view class="navbar-title navbar-index--navbar-title sk-transparent sk-text-25-0000-914 sk-text" style="top: 24px; background-position-x: 50%;">
+          境外游礼包
+        </view>
+      </view>
+    </view>
+    <view class="container contentBox" style="margin-top: 44px">
+      <view class="shopHeader">
+        <view class="shopnamebox">
+          <view>
+            <image class="shopIcon sk-image"></image>
+          </view>
+          <view class="titleBox">
+            <view class="title">
+              <text class="sk-transparent sk-text-14-2857-949 sk-text">屈臣氏</text>
+            </view>
+            <view>
+              <text style="color: #666" class="sk-transparent sk-text-14-2857-58 sk-text">watsons</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view style="padding: 15px 19px">
+        <view class="contentBoxShop">
+          <view is="components/coupon1/index">
+            <view class="coupon1-index--oneYou" style=" margin-top: 13px">
+              <view class="coupon1-index--contentTitle">
+                <view class="coupon1-index--contentTitle-one">
+                  <view style="color:red;font-weight: bolder;" class="sk-transparent sk-opacity">|</view>
+                  <view style="font-size: 17px;color:#252525;" class="sk-transparent sk-text-14-2857-729 sk-text">微信支付优惠券</view>
+                </view>
+                <view style="color:#000; font-size: 14px;opacity: 0.6;" class="sk-transparent sk-text-14-2857-901 sk-text">微信支付自动抵扣</view>
+              </view>
+              <view class="coupon1-index--youhuiBox">
+                <view class="coupon1-index--you1 sk-pseudo sk-pseudo-circle sk-image" style="background-color: rgb(254, 144, 13)">
+                  <view class="coupon1-index--you1-content">
+                    <view>
+                      <image class="coupon1-index--imgM sk-image" mode="widthFix" style="height: 74.2824px;"></image>
+                    </view>
+                    <view class="coupon1-index--quanCotent">
+                      <view>
+                        <view style="margin-top: 8px;color:" class="sk-transparent sk-text-14-2857-298 sk-text">超优汇率券</view>
+                        <view style="margin-top: 5px;color: #ccc;font-size:13px" class="sk-transparent sk-text-14-2857-350 sk-text">7天内笔笔有效</view>
+                      </view>
+                      <view class="coupon1-index--cirbox">
+                        <view class="coupon1-index--cir1">
+                          <image mode="widthFix" style="width: 44px; height: 44px;" class="sk-image"></image>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+                <view class="coupon1-index--you2 sk-image" style="border: none;">
+                  <view>
+                    <text style="color: #666" class="sk-transparent">
+            100港币= 85.41人民币 <text style="text-decoration: line-through transparent; color: rgb(204, 204, 204);" class="sk-transparent sk-text-14-2857-999 sk-text">市场参考价值 85.8人民币</text></text>
+                  </view>
+                  <view>
+                    <text style="color: #666" class="sk-transparent"></text>
+                  </view>
+                </view>
+              </view>
+              <view class="coupon1-index--youhuiBox">
+                <view class="coupon1-index--you1 sk-pseudo sk-pseudo-circle sk-image" style="background-color: #00C250">
+                  <view class="coupon1-index--you1-content">
+                    <view class="coupon1-index--imgM">
+                      <view>
+                        <view class="coupon1-index--outClass sk-transparent sk-text-32-0896-527 sk-text" style="display: inline-block; background-position-x: 50%;">
+                          10
+                        </view>
+                        <view style="display:inline-block; margin-left: 5px; color:#fff">
+                          <text class="sk-transparent sk-text-14-2857-592 sk-text">元</text>
+                        </view>
+                      </view>
+                      <view style="color:#ccc;font-size: small;width: 110px">
+                        <text class="sk-transparent sk-text-14-2857-954 sk-text">满300元可用</text>
+                      </view>
+                    </view>
+                    <view class="coupon1-index--quanCotent">
+                      <view>
+                        <view style="margin-top: 8px;color:" class="sk-transparent sk-text-14-2857-765 sk-text">境外通用券</view>
+                        <view style="margin-top: 5px;color: #ccc;font-size:13px" class="sk-transparent sk-text-14-2857-396 sk-text">15天内有效</view>
+                      </view>
+                      <view class="coupon1-index--cirbox">
+                        <view class="coupon1-index--cir1">
+                          <image mode="widthFix" style="width: 44px; height: 44px;" class="sk-image"></image>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+                <view class="coupon1-index--you2 sk-image" style="border: none;">
+                  <view>
+                    <text style="color: #666" class="sk-transparent">
+            4张待解锁 <text style="color: #ccc" class="sk-transparent sk-text-14-2857-939 sk-text">使用后扫不同码解锁下一张</text></text>
+                  </view>
+                </view>
+              </view>
+              <view class="coupon1-index--youhuiBox">
+                <view class="coupon1-index--you1 sk-pseudo sk-pseudo-circle sk-image" style="background-color: #FFF2EA">
+                  <view class="coupon1-index--you1-content">
+                    <view class="coupon1-index--imgM">
+                      <view>
+                        <view class="coupon1-index--outClass1 sk-transparent sk-text-32-0896-83 sk-text" style="display: inline-block; background-position-x: 50%;">
+                          20
+                        </view>
+                        <view style="display:inline-block; margin-left: 2px; color:#fff">
+                          <text style="color:red" class="sk-transparent sk-text-14-2857-957 sk-text">元</text>
+                        </view>
+                      </view>
+                    </view>
+                    <view class="coupon1-index--quanCotent">
+                      <view>
+                        <view style="margin-top: 8px;color:black" class="sk-transparent sk-text-14-2857-894 sk-text">屈臣氏专享券</view>
+                        <view style="margin-top: 5px;color: #ccc;font-size:13px" class="sk-transparent sk-text-14-2857-924 sk-text">21天内有效</view>
+                      </view>
+                      <view class="coupon1-index--cirbox">
+                        <view class="coupon1-index--cir1">
+                          <image mode="widthFix" style="width: 44px; height: 44px;" class="sk-image"></image>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

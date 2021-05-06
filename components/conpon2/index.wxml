@@ -1,0 +1,37 @@
+<view class="towYou" style="  margin-top: 25rpx;">
+      
+      <view class="contentTitle">
+        <view class="contentTitle-one">
+            <view style="color:red;font-weight: bolder">|</view>
+            <view style="font-size: 32rpx;color:#252525;">商家优惠券</view>
+        </view>
+        <view style="color:#000; font-size: 26rpx;opacity: 0.6;">请向收银员出示使用优惠券</view>
+      </view>
+      
+      <view class="youhuiBox1">
+        <view wx:for="{{shopYouList}}" class="shopBox2" wx:key="index">
+          <view class="you11" style="background-color:#FFF2EA ;">
+
+          <view>{{item.shopName}}</view>
+          <view style="margin-bottom: 10rpx">{{item.content1}}</view>
+          <view>
+              <image wx:if="{{item.img !==undefined}}" style="width: 70rpx" mode="widthFix" src="{{item.img}}"></image>
+              <view wx:else>
+                <text style="color: red;font-weight:bolder;font-size: x-large">{{item.youhui}}</text>
+              <text style="color:red;font-size:smaller">{{item.unit}}</text>
+              </view>
+          </view>
+          <view  style="font-size: small;color: #F15451">
+              <text>{{item.content2}}</text>
+              <text style="text-decoration: line-through">{{item.moneny}}</text>
+          </view>
+          </view>
+          <view class="you22">
+            <view class="useYou">使用优惠</view>
+          </view>
+        </view>
+          
+
+      </view>
+
+  </view>

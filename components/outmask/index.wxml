@@ -1,0 +1,54 @@
+<!-- 优惠券蒙层 -->
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}" catch:touchmove="touchmove"></view>
+<!-- 境外通用券 start-->
+<view class="modalDlg1" wx:if="{{showModal}}" catch:touchmove="touchmove">
+<view class="topText1Box1">
+ <view class="left11"></view>
+ <view class="right11"></view>
+ <view class="textContent3">
+    
+   <view class="text1">
+     <text>{{wxpayOut.name}}</text>
+   </view>
+   <view class="text2">
+     <text>{{wxpayOut.content1}}</text>
+   </view>
+   <view class="text3-t">
+      <view class="scrollBox1">
+         <view class="scrollBox2" catch:touchmove="touchmove">
+            <swiper class="box1"
+               autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" vertical="true" easing-function="linear" bindanimationfinish="testAimation">
+               <block wx:for="{{10}}" wx:key="*this">
+                  <swiper-item  catchtouchmove="stopTouchMove">
+                  <view class="swiper-item">{{index}}</view>
+                  </swiper-item>
+               </block>
+            </swiper>
+         </view>
+        <view class="scrollbox1-m">
+           <text class="" style="color: #fff;font-size: 43.2rpx">{{wxpayOut.unit}}</text>
+        </view>
+      </view>
+   </view>
+    
+   <!-- 钱图片 -->
+   <view class="moneny-count">
+      <image class="moneny-img" mode="widthFix" src="/images/moneny-count.png"></image>
+   </view>
+
+ </view>
+</view>
+<view class="bottomBox">
+ <view class="left2"></view>
+ <view class="right2"></view>
+ <view class="textContent2">
+    <text class="text4">
+     {{wxpayOut.content2}}
+    </text>
+ </view>
+
+ <view wx:if="{{isMore}}" class="getnext1" bindtap="getMore">领取更多</view>
+
+</view>
+
+</view>

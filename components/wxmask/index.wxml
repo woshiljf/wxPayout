@@ -1,0 +1,52 @@
+<!-- 优惠券蒙层 -->
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}" catch:touchmove="touchmove"></view>
+
+<!-- 微信支付超优惠汇率券start -->
+<view class="modalDlg" wx:if="{{showModal}}" catch:touchmove="touchmove">
+<view class="topText1Box">
+ <view class="left1"></view>
+ <view class="right1"></view>
+ <view class="textContent1">
+    
+   <view class="text1">
+     <text>{{wxpayInfo.name}}</text>
+   </view>
+   <view class="text2">
+     <text>{{wxpayInfo.content}}</text>
+   </view>
+   <view class="text3">
+   
+     <view class="text31">
+       <text class="text311">{{wxpayInfo.moneny1}}{{wxpayInfo.unit1}}= <text style="color: red" class="text312">{{wxpayInfo.moneny2}}</text>
+       <text style="color: red" class="text313">{{wxpayInfo.unit2}}</text>
+
+       </text>
+     </view>
+     <view>
+    
+       <text>
+         <text class="text314">{{wxpayInfo.content2}}</text>
+        <text style=" text-decoration: line-through;" class="text314">{{wxpayInfo.moneny3}}</text>
+         <text style="  text-decoration: line-through;" class="text314">{{wxpayInfo.unit2}}</text>
+       </text>
+     </view>
+
+   </view>
+   
+ </view>
+</view>
+<view class="bottomBox">
+ <view class="left2"></view>
+ <view class="right2"></view>
+ <view class="textContent2">
+    <text class="text4">
+      {{wxpayInfo.content3}}
+    </text>
+ </view>
+
+ <view class="getnext1" bindtap="getNext">领取下一张</view>
+
+</view>
+
+</view>
+<!-- 微信通用券send -->

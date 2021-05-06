@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "navbar":"/components/navbar/index",
+    "wxmask": "/components/wxmask/index",
+    "outmask": "/components/outmask/index",
+    "wxcoupon": "/components/coupon1/index",
+    "shopcoupon": "/components/conpon2/index"
+  },
+  "navigationBarBackgroundColor": "#ED3F35",
+  "navigationBarTitleText":"境外游礼包",
+  "navigationBarTextStyle": "white"
+}

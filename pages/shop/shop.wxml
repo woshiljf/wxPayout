@@ -1,0 +1,64 @@
+<navbar page-name="{{pageTitle}}" bgColor="#ED3F35" icon-color="white"></navbar>
+<view class="container contentBox" style="margin-top: {{navTop+20}}px">
+   <!-- 头部信息 -->
+   <view class="shopHeader ">
+   <view class="shopnamebox">
+      <view>
+      <image class="shopIcon" src="{{pageLogo}}"></image>
+   </view>
+   <view class="titleBox">
+     <view class="title">
+        <text>{{shopName.name}}</text>
+     </view>
+     <view>
+        <text style="color: #666">{{shopName.ename}}</text>
+     </view>
+   </view>
+   </view>
+   </view>
+  
+<!-- 内容区域 -->
+ <view style="padding: 28rpx 35rpx">
+   <view class="contentBoxShop">
+<!-- 第一种优惠券 -->
+   <wxcoupon youhuiList="{{youhuiList}}"></wxcoupon>
+<!-- 第二种优惠券 -->
+   <shopcoupon shopYouList="{{shopYouList}}"></shopcoupon>
+  </view>
+  
+
+<!-- 底部start -->
+ <view class="footer">
+  <view class="shopBottom1">
+<view class="bottom1-left" >
+ <view style="width: 71rpx;height:71rpx" class="shopmore">
+    <image class="shop1" src="/images/shop.png"></image>
+ </view>
+  <view style="margin: 10rpx 10rpx">
+     <text style="font-weight: bolder">更多商家优惠</text>
+  </view>
+</view>
+<view>
+  <image  class="imgLeft" style="width: 60rpx;color:#ccc" mode="widthFix" src="/images/right.png"></image>
+</view>
+</view>
+<view class="shopBottom2">
+<view style="font-size:26rpx;opacity:0.6;">
+<text>活动规则</text>
+<text style="margin: 0 15rpx">|</text>
+<text>联系客服</text>
+</view>
+</view>
+ </view>
+ </view>
+</view>
+
+
+<!-- 弹窗蒙层 -->
+
+<!-- 微信通用券start -->
+<wxmask wx:if="{{showModal1}}" wxpay-info="{{wxpay}}"  bind:getNext="getNext"></wxmask>
+<!-- 微信通用券end -->
+<!-- 境外通用券 start-->
+<outmask wx:if="{{showModal2}}" wxpay-out="{{wxpayOut}}" bind:getMore="getMore"></outmask>
+<!-- 境外通用券end -->

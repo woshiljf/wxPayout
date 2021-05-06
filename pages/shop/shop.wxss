@@ -1,0 +1,87 @@
+
+.navStyle{
+  color: white;
+}
+/* 导航标题end */
+
+/* 内容模块start */
+.contentBox{
+  margin-top: 100rpx;
+}
+.shopHeader{
+  height: 200rpx;
+  width: 100%;
+  background-color: rgb(238, 64, 54);
+  color: #fff;
+  box-sizing: border-box;
+  padding: 50rpx 25rpx;
+}
+.shopnamebox{
+  width: 245rpx;
+  height: 106rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.shopIcon{
+  width: 106rpx;
+  height: 106rpx;
+  border-radius: 50%;
+}
+.titleBox{
+  padding-top: 10rpx;
+}
+.title{
+  font-weight: bolder;
+}
+/* 内容区域 */
+.contentBoxShop{
+  width: 100%;
+  overflow: hidden;
+}
+.contentTitle{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50rpx;
+}
+.contentTitle-one{
+  display: flex;
+  justify-content: space-between;
+}
+/* 优惠end */
+/* 商家优惠2start */
+
+
+
+
+
+/* 商家优惠2 end */
+
+/* 底部样式start */
+.footer{
+  margin-top: 100rpx;
+  margin-bottom: 50rpx;
+}
+
+.shopmore{
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10rpx;
+  box-sizing: border-box;
+}
+.bottom1-left{
+  display: flex;
+}
+.shopBottom1{
+  display: flex;
+  justify-content: space-around;
+}
+.shopBottom2{
+  display: flex;
+  justify-content: center;
+  color: #ccc;
+}
+.shop1{
+  width: 50rpx;
+  height: 50rpx;
+}

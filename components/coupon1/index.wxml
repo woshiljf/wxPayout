@@ -1,0 +1,81 @@
+<view class="oneYou" style=" margin-top: 25rpx">
+      <view class="contentTitle">
+          <view class="contentTitle-one">
+            <view style="color:red;font-weight: bolder;">|</view>
+            <view style="font-size: 32rpx;color:#252525;">微信支付优惠券</view>
+          </view>
+          <view style="color:#000; font-size: 26rpx;opacity: 0.6;">微信支付自动抵扣</view>
+      </view>
+      <view class="youhuiBox" wx:for="{{youhuiList}}" wx:key="index">
+
+        
+      <view class="you1" style="background-color: {{item.bgc}}">
+
+        <view class="you1-content">
+        <view wx:if="{{item.isYou}}">
+          <image class="imgM" mode="widthFix" src="{{item.img}}"></image>
+        </view>
+          <view wx:else class="imgM">
+          
+            <view wx:if="{{item.isOut1}}">
+            <view class="outClass" style="display:inline-block;">
+              {{item.moneny4}}
+            </view>
+            <view style="display:inline-block; margin-left: 10rpx; color:#fff">
+              <text>元</text>
+            </view>
+            </view>
+            <view wx:else>
+            <view class="outClass1" style="display:inline-block;">
+              {{item.moneny4}}
+            </view>
+            <view style="display:inline-block; margin-left: 5rpx; color:#fff">
+              <text style="color:red">元</text>
+            </view>
+            </view>
+
+
+            <view style="color:#ccc;font-size: small;width: 200rpx">
+              <text>{{item.text3}}</text>
+            </view>
+          </view>
+
+      <view class="quanCotent">
+        <view>
+          <view style="margin-top: 15rpx;color:{{item.textColor}}">{{item.text1}}</view>
+        <view style="margin-top: 10rpx;color: #ccc;font-size:24rpx">{{item.text2}}</view>
+        </view>
+        <view class="cirbox">
+            <view class="cir1">
+              <!-- <text>{{item.effective}}</text> -->
+              <image style="width: 80rpx" mode="widthFix" src="{{item.effective}}"></image>
+            </view>
+        </view>
+      </view>
+        </view>
+      </view>
+
+      <view class="you2">
+        <view wx:if="{{item.isYou}}">
+          <text style="color: #666">
+            {{item.moneny1}}{{item.local}}= {{item.moneny2}}人民币 <text style="  text-decoration: line-through; color: #ccc">市场参考价值 {{item.moneny3}}人民币</text>
+          </text>
+        </view>
+        <!-- 下一张 -->
+        <view wx:if="{{item.isOut}}">
+          <text style="color: #666">
+            {{item.count}}张待解锁 <text style="color: #ccc">使用后扫不同码解锁下一张</text>
+          </text>
+        </view>
+        <view wx:else>
+          <text style="color: #666">
+            {{item.text4}}
+          </text>
+
+        </view>
+        
+
+      </view>
+      </view>
+
+    </view>

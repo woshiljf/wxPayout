@@ -1,0 +1,143 @@
+<navbar page-name="{{pageTitle}}" bgColor="#ED3F35" icon-color="white" isShow="{{false}}"></navbar>
+<view class="home-container" style="margin-top: {{navTop+25}}px">
+  <!-- 头部区域start -->
+  <view class="header-container">
+    <view class="locationHeader">
+    
+    <view class="location">
+
+      <image src="/images/location.png" alt="" style="width: 45rpx" mode="widthFix"></image>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{locationArray}}" style="color: #fff">
+         <view class="picker">
+         {{location}}
+         </view>
+         </picker>
+      <image src="/images/left.png" alt="" style="width: 45rpx" mode="widthFix"></image>
+    </view>
+    
+    <view class="conpon">
+      <image src="/images/youhuiquan.png" alt="" style="width: 45rpx" mode="widthFix"></image>
+    </view>
+
+   
+    </view>
+    <view class="conponHeader">
+     <view class="wxPay">
+       <view style="margin-bottom: 20rpx">  <icon type="success" style="vertical-align: middle;"></icon>
+       <text style="  font-weight: bolder;">微信支付 <text class="dian">.</text>  优惠汇率</text></view>
+       <view>
+         <text style="font-size: small;  font-weight: bolder;">100</text>
+         <text style="font-size: small">美元</text>
+         <text style="font-size: small">=</text>
+         <text style="font-size: small;  font-weight: bolder;">647.97</text>
+         <text style="font-size: small">人民币</text>
+       </view>
+
+     </view>
+
+     <view class="conponMore">
+       
+      <view class="more" style="padding-left: 10rpx">
+        <view style="margin-bottom: 20rpx; color: red;font-weight: bolder">更优汇率</view>
+        <view style="color: red;font-weight: bolder">647.84</view>
+      </view>
+      <view style="margin-top: 10rpx; margin-left: 10rpx">
+        <view class="button">领取</view>
+      </view>
+
+
+     </view>
+      
+    
+    </view>
+  </view>
+   <!-- 头部区域end -->
+  <!-- 内容区域start -->
+ 
+  <view class="content-container">
+ 
+    <!-- 服务start -->
+    <view class="service-container">
+      <van-grid column-num="3" border="{{false}}">
+         <van-grid-item icon="/images/rate.png" text="汇率换算" />
+         <van-grid-item icon="/images/server.png" text="客服" />
+         <van-grid-item icon="/images/local1.png" text="当地" />
+      </van-grid>
+    </view>
+    <!-- 服务end -->
+   
+    <!-- 当地购物start -->
+    <view class="contry-container">
+      <van-tabs swipeable>
+        <van-tab title="中国香港"  title-style="">
+          <view class="contry-content">
+            <view class="tab-choice">
+              <van-tabs swipeable>
+                <van-tab title="美妆零售1111">
+                  <view class="tab-content">
+                    <view style="border-bottom: 1px solid #ccc" wx:for="{{10}}">
+                      <van-card
+                      num="2"
+                      price="10.00"
+                      desc="优惠活动"
+                      title="屈臣氏线下专卖店"
+                      lazy-load="true"
+                      thumb="/images/watsons.jpeg"
+                    >
+                      <view slot="footer">
+                        <van-button size="mini">按钮</van-button>
+                        <van-button size="mini">按钮</van-button>
+                      </view>
+                    </van-card>
+
+                    </view>
+                    
+                    <view style="text-align: center;color: #ccc;height: 100rpx;line-height: 100rpx">
+                     <text>--------没有更多了-------</text>
+                    </view>
+                  </view>
+
+
+
+                </van-tab>
+                <van-tab title="标签 2">内容 2</van-tab>
+                <van-tab title="标签 3">内容 3</van-tab>
+                <van-tab title="标签 1">内容 1</van-tab>
+                <van-tab title="标签 2">内容 2</van-tab>
+                <van-tab title="标签 3">内容 3</van-tab>
+                <van-tab title="标签 1">内容 1</van-tab>
+                <van-tab title="标签 2">内容 2</van-tab>
+                <van-tab title="标签 3">内容 3</van-tab>
+              </van-tabs>
+            </view>
+          </view>
+
+
+
+
+
+
+
+
+
+        </van-tab>
+        <van-tab title="日本">日本</van-tab>
+        <van-tab title="韩国">韩国</van-tab>
+        <van-tab title="泰国">泰国</van-tab>
+        <van-tab title="中国澳门">中国澳门</van-tab>
+        <van-tab title="新加坡">新加坡</van-tab>
+        <van-tab title="中国台湾">中国台湾</van-tab>
+        <van-tab title="英国">英国</van-tab>
+      </van-tabs>
+
+    </view>
+    
+    <!-- 当地购物end -->
+
+    
+  </view>
+
+
+
+  <!-- 内容区域end -->
+</view>

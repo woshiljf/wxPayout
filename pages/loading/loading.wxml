@@ -1,0 +1,16 @@
+ 
+ <!-- <navbar isShow="{{false}}"></navbar> -->
+<view class="loadingHeader" style="margin-top: {{navTop}}px">
+ 
+ <view class="redCal"></view>
+ <view class="title">
+   <text>{{title}}</text>
+ </view>
+ <view class="loadingBox">
+ <view class="one"></view>
+ <view class="one two"></view>
+ <view class="one three"></view>
+
+</view>
+
+</view>
